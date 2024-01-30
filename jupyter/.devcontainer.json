@@ -1,5 +1,5 @@
 {
-  "name": "Jupyter app",
+  "name": "Jupyter with Quarto app",
   "dockerComposeFile": "docker-compose.yaml",
   "service": "app",
   "shutdownAction": "none",
@@ -9,7 +9,8 @@
   "postStartCommand": "sudo -u jovyan wb resource mount",
   "features": {
         "ghcr.io/devcontainers/features/aws-cli:1": {},
-        "ghcr.io/devcontainers/features/java:1": {}
+        "ghcr.io/devcontainers/features/java:1": {},
+        "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
   },
   "remoteUser": "root"
 }
